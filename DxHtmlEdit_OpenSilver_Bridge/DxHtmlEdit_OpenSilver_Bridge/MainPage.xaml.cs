@@ -16,7 +16,8 @@ namespace DxHtmlEdit_OpenSilver_Bridge
         private async void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
             await HtmlEdit.Initialize();
-            var myHtmlEdit = new HtmlEdit { Name = "myHtmlEdit", };
+            var myHtmlEdit = new HtmlEdit { Name = "myHtmlEdit" };
+            Grid.SetRow(myHtmlEdit, 1);
             myStackPanel.Children.Add(myHtmlEdit);
         }
     }
