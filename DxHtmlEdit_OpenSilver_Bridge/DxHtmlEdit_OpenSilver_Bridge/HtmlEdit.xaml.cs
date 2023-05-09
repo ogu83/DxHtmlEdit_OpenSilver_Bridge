@@ -29,6 +29,7 @@ namespace DevExpress.RichEdit
             const string path = "ms-appx:///DxHtmlEdit_OpenSilver_Bridge/js/";
 
             await OpenSilver.Interop.LoadCssFile($"{path}dx.light.css");
+            await OpenSilver.Interop.LoadJavaScriptFile($"{path}/jquery-3.5.1.min.js");
             await OpenSilver.Interop.LoadJavaScriptFile($"{path}dx-quill.min.js");
             await OpenSilver.Interop.LoadJavaScriptFile($"{path}dx.all.js");
             //await OpenSilver.Interop.LoadJavaScriptFile($"{path}dx.messages.sv.js");
