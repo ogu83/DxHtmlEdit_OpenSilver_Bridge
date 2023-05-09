@@ -74,8 +74,8 @@
     <None Include="js\fonts\Roboto-400.woff2" />
     <None Include="js\fonts\Roboto-500.woff2" />
     <None Include="js\fonts\Roboto-700.woff2" />
-    <Content Include="js\htmlEdit-creator.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="js\htmlEdit-creator2.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="js\icons\dxicons.woff2" />
     <None Include="js\icons\dxiconsmaterial.woff2" />

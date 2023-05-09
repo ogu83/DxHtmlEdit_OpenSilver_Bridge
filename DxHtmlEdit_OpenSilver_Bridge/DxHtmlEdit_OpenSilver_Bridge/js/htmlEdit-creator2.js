@@ -753,9 +753,11 @@
                         mediaResizing: {
                             enabled: true,
                         },
-                        onValueChanged({ component, value }) {
-                            if (onValueChanged)
-                                onValueChanged(value);
+                        onFocusIn({ e }) {
+                            console.log("htmledit onFocusIn", e);
+                        },
+                        onfocusOut({ e }) {
+                            console.log("htmledit onfocusOut", e);
                         },
                         onInitialized({ component }) {
                             if (onInitialized)
@@ -859,7 +861,7 @@
         return window.htmlEdit.getLength();
     }
 
-    var _lastHeight = val;
+    var _lastHeight = 0;
     function setHeight(val) {
         if (!window.htmlEdit)
             return;

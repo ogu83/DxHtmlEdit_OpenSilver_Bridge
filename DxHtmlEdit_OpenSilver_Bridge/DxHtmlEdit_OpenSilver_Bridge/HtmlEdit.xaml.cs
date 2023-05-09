@@ -35,7 +35,7 @@ namespace DevExpress.RichEdit
             await OpenSilver.Interop.LoadJavaScriptFile($"{path}dx-quill.min.js");
             await OpenSilver.Interop.LoadJavaScriptFile($"{path}dx.all.js");
             //await OpenSilver.Interop.LoadJavaScriptFile($"{path}dx.messages.sv.js");
-            await OpenSilver.Interop.LoadJavaScriptFile($"{path}htmlEdit-creator.js");
+            await OpenSilver.Interop.LoadJavaScriptFile($"{path}htmlEdit-creator2.js");
 
 #if DEBUG
             OpenSilver.Interop.ExecuteJavaScript("console.log('HtmlEdit Javascript files initialized')");

@@ -753,10 +753,10 @@
                         mediaResizing: {
                             enabled: true,
                         },
-                        onFocusIn: ({ e }) {
+                        onFocusIn({ e }) {
                             console.log("htmledit onFocusIn", e);
                         },
-                        onfocusOut: ({ e }) {
+                        onfocusOut({ e }) {
                             console.log("htmledit onfocusOut", e);
                         },
                         onInitialized({ component }) {
