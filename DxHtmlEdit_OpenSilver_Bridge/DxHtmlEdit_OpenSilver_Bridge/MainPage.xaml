@@ -7,11 +7,16 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+
     <Grid x:Name="myStackPanel">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="20" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <TextBlock Text="DEVEX Html Editor Test" />
+        <TextBlock Text="Devexpress Html Editor Test" Grid.Row="0" />
+        <Button Content="Initialize Html Editor" x:Name="btnInit" Click="btnInit_Click" Grid.Row="1" />
+        <Button Content="Execute Html Editor" IsEnabled="False" x:Name="btnExecute" Click="btnExecute_Click" Grid.Row="2" />
     </Grid>
 </Page>

@@ -10,15 +10,24 @@ namespace DxHtmlEdit_OpenSilver_Bridge
         {
             InitializeComponent();
             Loaded += MainPage_Loaded;
-            // Enter construction logic here...
         }
 
         private async void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
-            await HtmlEdit.Initialize();
+            //await HtmlEdit.Initialize();
+        }
+
+        private void btnExecute_Click(object sender, RoutedEventArgs e)
+        {
             var myHtmlEdit = new HtmlEdit { Name = "myHtmlEdit" };
-            Grid.SetRow(myHtmlEdit, 1);
+            Grid.SetRow(myHtmlEdit, 3);
             myStackPanel.Children.Add(myHtmlEdit);
+        }
+
+        private async void btnInit_Click(object sender, RoutedEventArgs e)
+        {
+            await HtmlEdit.Initialize();
+            btnExecute.IsEnabled = true;
         }
     }
 }
